@@ -36,7 +36,6 @@ class ArticleControllerTest {
                 .andExpect(model().attributeExists("articles"));
     }
 
-    @Disabled("구현 중")
     @DisplayName("[view] [GET] 게시글 상세 페이지 - 정상 호출")
     @Test
     public void givenNothing_whenRequestingArticleView_thenReturnsArticleView() throws Exception {
@@ -65,7 +64,7 @@ class ArticleControllerTest {
     }
 
     @Disabled("구현 중")
-    @DisplayName("[view] [GET] 게시글 상세 페이지 - 정상 호출")
+    @DisplayName("[view] [GET] 게시글 헤시태그 검색 페이지 - 정상 호출")
     @Test
     public void givenNothing_whenRequestingArticleSearchHashtagView_thenReturnsArticleSearchHashtagView() throws Exception {
         // Given
