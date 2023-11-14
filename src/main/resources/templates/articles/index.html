@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>게시판 페이지</title>
@@ -7,10 +7,7 @@
 
 <body>
 
-<header th:replace="header :: header">
-    header 삽입부
-    <hr>
-</header>
+<header id="header"></header>
 
 <main>
     <form>
@@ -29,32 +26,32 @@
 
     <table>
         <thead>
-            <tr>
-                <th>제목</th>
-                <th>해시태그</th>
-                <th>작성자</th>
-                <th>작성일</th>
-            </tr>
+        <tr>
+            <th>제목</th>
+            <th>해시태그</th>
+            <th>작성자</th>
+            <th>작성일</th>
+        </tr>
         </thead>
         <tbody>
-             <tr>
-                 <th>첫글</th>
-                 <th>#java</th>
-                 <th>Uno</th>
-                 <th>2023-01-01</th>
-             </tr>
-             <tr>
-                <th>두번째글</th>
-                <th>#spring</th>
-                <th>Uno</th>
-                <th>2022-01-03</th>
-            </tr>
-            <tr>
-                <th>세번쨰글</th>
-                <th>#java</th>
-                <th>Uno</th>
-                <th>2022-02-02</th>
-            </tr>
+        <tr>
+            <th>첫글</th>
+            <th>#java</th>
+            <th>Uno</th>
+            <th>2023-01-01</th>
+        </tr>
+        <tr>
+            <th>두번째글</th>
+            <th>#spring</th>
+            <th>Uno</th>
+            <th>2022-01-03</th>
+        </tr>
+        <tr>
+            <th>세번쨰글</th>
+            <th>#java</th>
+            <th>Uno</th>
+            <th>2022-02-02</th>
+        </tr>
         </tbody>
 
     </table>
@@ -73,6 +70,6 @@
     </nav>
 </main>
 
-<footer th:replace="footer :: footer"></footer>
+<footer id="footer"></footer>
 </body>
 </html>
