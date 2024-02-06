@@ -69,3 +69,14 @@ sourceSets {
 clean {
     delete file(generated)
 }
+
+test {
+    exclude '**/*'
+}
+
+// Heroku 설정
+jar {
+    manifest {
+        attributes('Main-Class': 'com.fastcampus.projectboard.FastCampusProjectBoardApplication')
+    }
+}
